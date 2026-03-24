@@ -6,12 +6,26 @@ Write a Java program to serialize a collection of objects (like ArrayList<Studen
 
 
 ## AIM:
-
-
+To write a Java program that accepts user input, stores multiple Student objects in an ArrayList, serializes the collection into a file, and then deserializes it to display the stored data.
 ## ALGORITHM :
 1.	Start the program.
 2.	Import the necessary package 'java.util'
-3.	
+3.	Create a class Student that implements Serializable.
+4. Declare data members: id, name, and marks.
+5. Define a constructor and override toString() method.
+6. In the main class, create a Scanner object for user input.
+7. Read the number of students n.
+8. Use a loop to input student details (id, name, marks).
+9. Store each object in an ArrayList<Student>.
+Call serializeStudents() method:
+Create ObjectOutputStream.
+10. Write the list into a file using writeObject().
+Call deserializeStudents() method:
+Create ObjectInputStream.
+11. Read the list from the file using readObject().
+12. Display the deserialized student details.
+13. Close the scanner.
+14. Stop the program.
 
 
 
@@ -21,8 +35,8 @@ Write a Java program to serialize a collection of objects (like ArrayList<Studen
  ```
 /*
 Program to implement a Serialization and Deserialization using Java
-Developed by: 
-RegisterNumber:  
+Developed by: ENBANATHAN V
+RegisterNumber: 212224220027 
 */
 ```
 
@@ -122,3 +136,4 @@ public class StudentSerializationUserInput {
 
 
 ## RESULT:
+The program successfully demonstrates serialization and deserialization in Java using user input. Multiple Student objects are stored in a file and later retrieved correctly, preserving the data structure and values.
