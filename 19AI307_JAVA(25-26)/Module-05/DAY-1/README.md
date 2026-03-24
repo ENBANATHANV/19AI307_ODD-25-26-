@@ -71,3 +71,5 @@ public class ChainingStreamsExample {
 
 
 ## RESULT:
+
+The program successfully demonstrates chaining of streams using BufferedReader and InputStreamReader to read input from the user and displays the entered name and age correctly.
